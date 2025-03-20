@@ -264,14 +264,14 @@
     height: 1.25rem;
     margin-left: auto;
     content: "";
-    background-image: url(/images/accordian_arrow_red.svg);
+    background-image: url("../images/accordian_arrow_red.svg");
     background-repeat: no-repeat;
     background-size: 1.25rem;
     transition: transform 0.2sease-in-out;
   }
   &:not(.collapsed) {
     &::after {
-      background-image: url(/images/accordian_arrow_red.svg) !important;
+      background-image: url("../images/accordian_arrow_red.svg") !important;
       transform: rotate(-180deg);
     }
     color: $color_1 !important;
@@ -517,7 +517,8 @@ input[type="radio"] {
       ~ {
         .custom-control-label {
           &::after {
-            background-image: url(/images/whiteball.svg);
+            background-image: url("../images/whiteball.svg");
+
           }
         }
       }
@@ -1351,7 +1352,7 @@ input[type="radio"] {
   box-shadow: none;
 }
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
-  background-image: url(images/download.svg);
+  background-image: url("../images/download.svg");
 }
 
 // add to cart modal
@@ -1709,4 +1710,72 @@ body {
       height: 90px;
     }
   }
+}
+// css safa
+body {
+  background: #f3f3f3;
+  .main_container {
+    margin-top: 20px;
+    max-width: 85%;
+    .overlapOne_header {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      width: 850px;
+      height: 37rem;
+      .hotel_name {
+        font-size: 32px;
+        font-weight: 700;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+      }
+      /*----HOTEL GALLEY-----*/
+  .gallery_images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-top: 15px;
+    a {
+      flex: 0 0 29%;
+      max-width: 50%;
+      img {
+        max-width: 200px;
+        border-radius: 10px;
+        width: 190px;
+        height: 150px;
+        margin-bottom: 15px;
+        object-fit: cover;
+        transition: transform 1s ease;
+        &:hover {
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
+  /*---------*/
+    
+    }
+  }
+}
+
+/* Adjust the container size for the Fancybox content */
+.fancybox__container{
+  z-index: 9999;
+}
+.fancybox__content {
+  width: 800px !important;
+  height: 800px !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  .fancybox__image {
+    width: 800px !important;
+    height: auto !important;
+    object-fit: contain;
+  }
+}
+.fancybox__slide.is-selected {
+  .fancybox__image {
+    transform: scale(0);
+  }
+  
 }

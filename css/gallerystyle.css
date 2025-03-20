@@ -1,0 +1,611 @@
+body {
+  background: #f3f3f3;
+}
+body .main_container {
+  margin-top: 20px;
+  max-width: 85%;
+}
+body .main_container .overlapOne_header {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 850px;
+  height: 37rem;
+  /*----HOTEL GALLEY-----*/
+  /*---------*/
+}
+body .main_container .overlapOne_header .hotel_name {
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+body .main_container .overlapOne_header .gallery_images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-top: 15px;
+}
+body .main_container .overlapOne_header .gallery_images a {
+  flex: 0 0 29%;
+  max-width: 50%;
+}
+body .main_container .overlapOne_header .gallery_images a img {
+  max-width: 200px;
+  border-radius: 10px;
+  width: 190px;
+  height: 150px;
+  margin-bottom: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 1s ease;
+}
+body .main_container .overlapOne_header .gallery_images a img:hover {
+  transform: scale(0.95);
+}
+
+/* Adjust the container size for the Fancybox content */
+.fancybox__container {
+  z-index: 9999;
+}
+
+.fancybox__content {
+  width: 800px !important;
+  height: 800px !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+.fancybox__content .fancybox__image {
+  width: 800px !important;
+  height: auto !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.fancybox__slide.is-selected .fancybox__image {
+  transform: scale(0);
+}
+
+.right_Sec {
+  border-radius: 12px;
+  padding: 20px;
+  height: 37rem;
+  background: #fff;
+}
+.right_Sec .right_sectiondata .top_sec1 {
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  border-radius: 12px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.right_Sec .right_sectiondata .top_sec1 .rating_tag {
+  font-weight: 600;
+}
+.right_Sec .right_sectiondata .top_sec1 .rating_tag .star_span {
+  color: #ffc619;
+  font-size: 18px;
+}
+.right_Sec .right_sectiondata .down_sec {
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  border-radius: 12px;
+  height: 320px;
+}
+.right_Sec .right_sectiondata .down_sec #googleMap {
+  width: 100%;
+  height: 200px;
+}
+
+h5 {
+  color: #b31f24;
+}
+
+.right_side {
+  box-shadow: 0px 1px 10px 0.2px rgba(0, 0, 0, 0.18);
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.fancy_title h2 {
+  font-size: 20px;
+}
+
+.itinerary .nav {
+  background-color: rgba(255, 198, 25, 0.1);
+  flex-wrap: nowrap;
+  padding: 5px;
+  position: relative;
+  padding-left: 30px;
+  overflow-x: auto;
+}
+.itinerary .nav .nav-item.legend {
+  background-color: #ffc619;
+  color: #b31f24;
+  font-size: 15px;
+  transform: rotate(-90deg);
+  padding: 4px 10px;
+  text-align: center;
+  position: absolute;
+  width: 50px;
+  top: 16px;
+  left: -10px;
+}
+.itinerary .nav .nav-item {
+  margin-bottom: -1px;
+}
+.itinerary .nav .nav-item .nav-link {
+  background-color: #fff;
+  border: 0;
+  margin: 0 auto;
+  color: black;
+  border-radius: 5px;
+  width: 90%;
+}
+.itinerary .nav .nav-item .nav-link h1 {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.itinerary .nav .nav-item .nav-link h1 small {
+  font-size: 14px;
+}
+.itinerary .nav .nav-item .nav-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+.itinerary .nav .nav-item .nav-link.active {
+  background-color: #b31f24;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+}
+
+.other_date {
+  font-size: 9px !important;
+}
+
+.filter_row .filter_toggler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600 !important;
+  font-size: 18px;
+  color: black !important;
+}
+.filter_row .inner_collaspe_area {
+  padding-top: 15px;
+}
+
+.radioW_cust {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.custom-control-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-control-label {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+  padding-left: 30px;
+}
+.custom-control-label h6 {
+  color: black;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #b31f24 !important;
+  background-color: #b31f24 !important;
+  box-shadow: none;
+}
+
+.BottomSecWrap h6 {
+  color: black;
+}
+.BottomSecWrap .priceS {
+  font-size: 16px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #b31f24;
+  font-weight: 700;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: src("images/whiteball.png");
+}
+
+.custom-control-label::before {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  background-color: #fff;
+  border: #adb5bd solid 1px;
+}
+
+.custom-control-label::after {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: no-repeat 50%/50% 50%;
+}
+
+.pass_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #f7f7f7;
+  padding-bottom: 15px;
+}
+.pass_row .left_area {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.pass_row .left_area img {
+  width: 40px;
+  height: 40px;
+  padding-right: 8px;
+}
+.pass_row .left_area h4 {
+  font-size: 14px;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+.pass_row .left_area h4 span {
+  display: block;
+  font-size: 12px;
+  color: #383535;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.pass_row .right_area .input-group-btn {
+  background: #fff;
+  border-radius: 50% !important;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none !important;
+  border: 1px solid #8a8686;
+}
+.pass_row .right_area .input-group-btn .btn {
+  padding: 0;
+  color: #b31f24;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  color: #b31f24;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}
+.pass_row .right_area .form-control {
+  width: 60px;
+  text-align: center;
+  border: 0;
+  margin-top: -3px;
+  padding: 0;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+.flight_search .inpute_holder {
+  position: relative;
+  border: 1px solid #f3f3f3;
+  margin-bottom: 15px;
+  padding: 4px 15px;
+  border-radius: 10px;
+}
+.flight_search .inpute_holder label img {
+  margin-right: 5px;
+  vertical-align: sub;
+  height: 24px;
+  width: 24px;
+}
+.flight_search .inpute_holder .form-control {
+  border: 0;
+  padding: 0;
+  font-size: 14px;
+  outline: none;
+  box-shadow: none;
+}
+
+.child_label {
+  font-size: 14px;
+}
+
+.inner_desc_trip {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #f7f7f7;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 1px 10px 0.2px rgba(0, 0, 0, 0.18);
+  margin-top: 20px;
+}
+.inner_desc_trip h5 {
+  font-size: 18px !important;
+  font-weight: 700;
+  color: black;
+}
+.inner_desc_trip .btn {
+  background-color: #b31f24;
+  color: white;
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 12px;
+  outline: none;
+  box-shadow: none !important;
+  font-weight: 600;
+}
+.inner_desc_trip .btn:hover {
+  background-color: #ffc619;
+  color: black;
+}
+
+.booking-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.booking-item .booking-info {
+  display: flex;
+  gap: 10px;
+}
+.booking-item .booking-info .booking-number {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+}
+.booking-item .booking-info .booking-details h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.booking-item .booking-info .booking-details p {
+  margin: 2px 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #666;
+  margin: 2px 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #666;
+}
+.booking-item .booking-price {
+  font-size: 16px;
+  font-weight: bold;
+}
+.booking-item .booking-price strong {
+  font-weight: 700;
+}
+
+.total-section hr {
+  border: none;
+  border-top: 3px solid rgb(123, 123, 123);
+  margin-bottom: 5px;
+}
+.total-section .total-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total-section .total-info span {
+  font-weight: 700;
+}
+.total-section .total-info .total-amount .price {
+  color: #b31f24;
+  font-size: 20px;
+  font-weight: 700;
+}
+.total-section .total-info .total-amount p {
+  font-size: 12px;
+  color: black;
+  margin: 2px 0 0;
+  font-weight: 700;
+}
+
+.rooms_bkng {
+  box-shadow: 0px 1px 10px 0.2px rgba(0, 0, 0, 0.18);
+  border-radius: 12px;
+}
+
+.travellingsection_scnd {
+  box-shadow: 0px 1px 10px 0.2px rgba(0, 0, 0, 0.18);
+  border-radius: 12px;
+}
+
+.radioW_section_scnd {
+  border: 1px solid #f2f2f2;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.filter_row .inner_collaspe_area {
+  padding-top: 15px;
+}
+
+.radioW_cust {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.radioW_section_scnd .custom-control-label::before {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  background-color: #fff;
+  border: #adb5bd solid 1px;
+}
+
+.radioW_section_scnd .custom-control-label::after {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: no-repeat 50%/50% 50%;
+}
+
+.user_label span {
+  background-color: #b31f24;
+  color: #fff;
+  display: inline-block;
+  margin-left: -17px;
+  padding: 5px 16px;
+  margin-bottom: 9px;
+}
+
+.fixed_date {
+  color: #b31f24 !important;
+  font-size: 14px;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  outline: 0;
+}
+
+.modal_cntnt {
+  width: 380px !important;
+  margin: auto;
+}
+
+.modal-body #datepicker {
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.modal-body #datepicker .ui-datepicker {
+  width: 21em;
+  height: 17em;
+  padding: 1em 0em 0;
+  border: none;
+}
+.modal-body #datepicker .ui-datepicker .ui-datepicker-header {
+  padding: 0em 0;
+  height: 2.5em;
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+.modal-body #datepicker .ui-datepicker .ui-datepicker-prev {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+.modal-body #datepicker .ui-datepicker .ui-datepicker-prev::after {
+  position: absolute;
+  content: "\f0d9";
+  font-family: "Font Awesome 5 Free";
+  top: 0px;
+  left: 12px;
+}
+.modal-body #datepicker .ui-datepicker .ui-datepicker-prev span {
+  display: none;
+}
+.modal-body #datepicker .ui-datepicker .ui-datepicker-next {
+  right: 2px;
+  position: absolute;
+  top: 2px;
+  width: 1.8em;
+  height: 1.8em;
+}
+.modal-body #datepicker .ui-datepicker .ui-datepicker-next::after {
+  position: absolute;
+  content: "\f0da";
+  font-family: "Font Awesome 5 Free";
+  top: 0px;
+  right: 12px;
+}
+.modal-body #datepicker .ui-datepicker .ui-datepicker-next span {
+  display: none;
+}
+
+.ui-datepicker table {
+  width: 100%;
+  font-size: 0.9em;
+  border-collapse: collapse;
+  margin: 0 0 0.4em;
+}
+
+.ui-state-default {
+  border: 1px solid transparent !important;
+  background: none !important;
+  font-weight: normal;
+  color: #454545;
+  text-align: center !important;
+}
+
+.ui-state-active {
+  border: 1px solid #b31f24 !important;
+  color: black !important;
+}
+
+.weekend-date a {
+  color: #b31f24 !important;
+  font-weight: bold;
+}
+
+.modal-footer .calender_btn {
+  background-color: #b31f24;
+  border-radius: 1.5rem;
+  color: #fff !important;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  height: 40px;
+  width: 122px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none !important;
+  outline: none;
+}
+.modal-footer .calender_btn:hover {
+  background-color: #ffc619;
+  color: black !important;
+}
+
+.nav-tabs::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Chrome, Safari, and newer Edge */
+}/*# sourceMappingURL=gallerystyle.css.map */

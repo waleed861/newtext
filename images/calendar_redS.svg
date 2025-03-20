@@ -1,0 +1,17 @@
+<svg id="calendar_red" xmlns="http://www.w3.org/2000/svg" width="14.508" height="14.508" viewBox="0 0 14.508 14.508">
+  <g id="Group_103" data-name="Group 103">
+    <g id="Group_102" data-name="Group 102">
+      <ellipse id="Ellipse_75" data-name="Ellipse 75" cx="0.659" cy="0.44" rx="0.659" ry="0.44" transform="translate(10.331 5.495)" fill="#b31f24"/>
+      <path id="Path_547" data-name="Path 547" d="M12.241,1.133H11.5V.567a.567.567,0,1,0-1.133,0v.567H7.792V.567a.567.567,0,0,0-1.133,0v.567H4.109V.567a.567.567,0,0,0-1.133,0v.567H2.267A2.269,2.269,0,0,0,0,3.4v8.841a2.269,2.269,0,0,0,2.267,2.267H6.6a.567.567,0,1,0,0-1.133H2.267a1.135,1.135,0,0,1-1.133-1.133V3.4A1.135,1.135,0,0,1,2.267,2.267h.708v.567a.567.567,0,1,0,1.133,0V2.267h2.55v.567a.567.567,0,0,0,1.133,0V2.267h2.579v.567a.567.567,0,1,0,1.133,0V2.267h.737A1.135,1.135,0,0,1,13.374,3.4v3.23a.567.567,0,0,0,1.133,0V3.4A2.269,2.269,0,0,0,12.241,1.133Z" fill="#b31f24"/>
+      <path id="Path_548" data-name="Path 548" d="M273.429,270a3.429,3.429,0,1,0,3.429,3.429A3.432,3.432,0,0,0,273.429,270Zm0,5.724a2.3,2.3,0,1,1,2.3-2.3A2.3,2.3,0,0,1,273.429,275.724Z" transform="translate(-262.349 -262.349)" fill="#b31f24"/>
+      <path id="Path_549" data-name="Path 549" d="M372.388,331.162h-.255v-.6a.567.567,0,1,0-1.133,0v1.162a.567.567,0,0,0,.567.567h.822a.567.567,0,1,0,0-1.133Z" transform="translate(-360.487 -320.649)" fill="#b31f24"/>
+      <ellipse id="Ellipse_76" data-name="Ellipse 76" cx="0.659" cy="0.44" rx="0.659" ry="0.44" transform="translate(7.694 5.495)" fill="#b31f24"/>
+      <ellipse id="Ellipse_77" data-name="Ellipse 77" cx="0.44" cy="0.659" rx="0.44" ry="0.659" transform="translate(5.495 7.694)" fill="#b31f24"/>
+      <ellipse id="Ellipse_78" data-name="Ellipse 78" cx="0.659" cy="0.44" rx="0.659" ry="0.44" transform="translate(2.858 5.495)" fill="#b31f24"/>
+      <circle id="Ellipse_79" data-name="Ellipse 79" cx="0.659" cy="0.659" r="0.659" transform="translate(2.858 7.694)" fill="#b31f24"/>
+      <circle id="Ellipse_80" data-name="Ellipse 80" cx="0.659" cy="0.659" r="0.659" transform="translate(2.858 10.331)" fill="#b31f24"/>
+      <ellipse id="Ellipse_81" data-name="Ellipse 81" cx="0.44" cy="0.659" rx="0.44" ry="0.659" transform="translate(5.495 10.331)" fill="#b31f24"/>
+      <circle id="Ellipse_82" data-name="Ellipse 82" cx="0.44" cy="0.44" r="0.44" transform="translate(5.495 5.495)" fill="#b31f24"/>
+    </g>
+  </g>
+</svg>

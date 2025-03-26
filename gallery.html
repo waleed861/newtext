@@ -1,264 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta property="og:title" content="Mosafir" />
+    <link rel="stylesheet" href="app.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <meta
+      property="og:description"
+      content="Jazz Mosafir is a leading travel advisory platform dedicated to bring you exclusive travel experiences, along with incomparable prices on flight, hotel & trip bookings."
+    />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="https://www.mosafir.pk/assets/images/mosafir.jpg"
+    />
 
-<head>
-  <meta property="og:title" content="Mosafir" />
-  <link rel="stylesheet" href="app.js">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-  <meta property="og:description"
-    content="Jazz Mosafir is a leading travel advisory platform dedicated to bring you exclusive travel experiences, along with incomparable prices on flight, hotel & trip bookings." />
-  <meta property="og:image" itemprop="image" content="https://www.mosafir.pk/assets/images/mosafir.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_GB" />
+    <meta charset="utf-8" />
+    <title>Mosafir</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="csrf-token"
+      content="8OZpaPCqtxbQrEgG4zN0ZRkJFxGIlzlZUyTRnbmY"
+    />
 
-  <meta charset="utf-8" />
-  <title>Mosafir</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="csrf-token" content="8OZpaPCqtxbQrEgG4zN0ZRkJFxGIlzlZUyTRnbmY" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
-    rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-
-    <link rel="stylesheet" href="css/gallerystyle.css">
+    <link rel="stylesheet" href="css/gallerystyle.css" />
 
     <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <!-- ui date picker -->
-      <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
-      <link rel="stylesheet" href="/resources/demos/style.css">
-      <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-      <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-</head>
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ui date picker -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  </head>
 
-<body>
-  
+  <body>
+    <!-- <div class="container1"> -->
+    <div class="container main_container">
+      <div class="row">
+        <div class="col-md-8 m-0">
+          <div class="overlapOne_header">
+            <div class="name_rating tour_detail">
+              <h2 class="hotel_name">
+                La Quinta By Wyndham Abu Dhabi Al Wahda
+              </h2>
+            </div>
+            <!--END OF NAME RATING-->
 
-  <!-- <div class="container1"> -->
-  <div class="container main_container">
-    <div class="row">
-      <div class="col-md-8 m-0">
-        <div class="overlapOne_header">
-          <div class="name_rating tour_detail">
-            <h2 class="hotel_name">La Quinta By Wyndham Abu Dhabi Al Wahda</h2>
+            <div class="gallery_images row" id="gallery">
+              <div class="col-md-3">
+                <a data-fancybox="gallery" href="images/dubai.png">
+                  <img src="images/dubai.png" alt="Image 1" />
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a data-fancybox="gallery" href="images/dubai.png">
+                  <img src="images/dubai.png" alt="Image 1" />
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a data-fancybox="gallery" href="images/dubai.png">
+                  <img src="images/dubai.png" alt="Image 1" />
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a data-fancybox="gallery" href="images/dubai.png">
+                  <img src="images/dubai.png" alt="Image 1" />
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a data-fancybox="gallery" href="images/dubai.png">
+                  <img src="images/dubai.png" alt="Image 1" />
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a data-fancybox="gallery" href="images/dubai.png">
+                  <img src="images/dubai.png" alt="Image 1" />
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a data-fancybox="gallery" href="images/dubai.png">
+                  <img src="images/dubai.png" alt="Image 1" />
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a data-fancybox="gallery" href="images/dubai.png">
+                  <img src="images/dubai.png" alt="Image 1" />
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a data-fancybox="gallery" href="images/dubai.png">
+                  <img src="images/dubai.png" alt="Image 1" />
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a data-fancybox="gallery" href="images/dubai.png">
+                  <img src="images/dubai.png" alt="Image 1" />
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a data-fancybox="gallery" href="images/dubai.png">
+                  <img src="images/dubai.png" alt="Image 1" />
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a data-fancybox="gallery" href="images/dubai.png">
+                  <img src="images/dubai.png" alt="Image 1" />
+                </a>
+              </div>
+            </div>
+            <!--end of gallery images-->
           </div>
-          <!--END OF NAME RATING-->
-
-          <div class="gallery_images row" id="gallery">
-            <div class="col-md-3">
-              <a data-fancybox="gallery" href="images/dubai.png">
-                <img src="images/dubai.png" alt="Image 1" />
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a data-fancybox="gallery" href="images/dubai.png">
-                <img src="images/dubai.png" alt="Image 1" />
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a data-fancybox="gallery" href="images/dubai.png">
-                <img src="images/dubai.png" alt="Image 1" />
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a data-fancybox="gallery" href="images/dubai.png">
-                <img src="images/dubai.png" alt="Image 1" />
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a data-fancybox="gallery" href="images/dubai.png">
-                <img src="images/dubai.png" alt="Image 1" />
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a data-fancybox="gallery" href="images/dubai.png">
-                <img src="images/dubai.png" alt="Image 1" />
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a data-fancybox="gallery" href="images/dubai.png">
-                <img src="images/dubai.png" alt="Image 1" />
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a data-fancybox="gallery" href="images/dubai.png">
-                <img src="images/dubai.png" alt="Image 1" />
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a data-fancybox="gallery" href="images/dubai.png">
-                <img src="images/dubai.png" alt="Image 1" />
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a data-fancybox="gallery" href="images/dubai.png">
-                <img src="images/dubai.png" alt="Image 1" />
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a data-fancybox="gallery" href="images/dubai.png">
-                <img src="images/dubai.png" alt="Image 1" />
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a data-fancybox="gallery" href="images/dubai.png">
-                <img src="images/dubai.png" alt="Image 1" />
-              </a>
-            </div>
-          </div>
-          <!--end of gallery images-->
         </div>
-      </div>
-      <!-- side div -->
-      <div class="col-md-4">
-        <!-- start of the first right side -->
-        <div class="right_side pb-3">
-          <section class="have_border itinerary lazyLoad fetched_list fetched_list-dark lazyload-dark">
-            <div class="fancy_title p-3">
-              <h2 class="light-shimmer">Trip Itinerary</h2>
-            </div>
+        <!-- side div -->
+        <div class="col-md-4">
+          <!-- start of the first right side -->
+          <!-- <div class="right_side pb-3">
+            <section
+              class="have_border itinerary lazyLoad fetched_list fetched_list-dark lazyload-dark"
+            >
+              <div class="fancy_title p-3">
+                <h2 class="light-shimmer">Trip Itinerary</h2>
+              </div>
 
-            <ul class="nav nav-tabs dark-shimmer" id="myTab" role="tablist">
-              <li class="nav-item legend">Mar</li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="day-tab_0" data-toggle="tab" data-target="#day-tab-pane_0"
-                  type="button" role="tab" aria-controls="day-tab-pane_0" aria-selected="true">
-                  <h1><small>DAY</small> 1</h1>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="day-tab_1" data-toggle="tab" data-target="#day-tab-pane_1"
-                  type="button" role="tab" aria-controls="day-tab-pane_1" aria-selected="false">
-                  <h1><small>DAY</small> 2</h1>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="day-tab_2" data-toggle="tab" data-target="#day-tab-pane_2"
-                  type="button" role="tab" aria-controls="day-tab-pane_2" aria-selected="false">
-                  <h1><small>DAY</small> 3</h1>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="day-tab_3" data-toggle="tab" data-target="#day-tab-pane_3"
-                  type="button" role="tab" aria-controls="day-tab-pane_3" aria-selected="false">
-                  <h1><small>DAY</small> 4</h1>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="day-tab_4" data-toggle="tab" data-target="#day-tab-pane_4"
-                  type="button" role="tab" aria-controls="day-tab-pane_4" aria-selected="false">
-                  <h1><small>DAY</small> 5</h1>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="btn nav-link" type="button" data-toggle="modal" data-target="#calendarModal">
-                  <h1 class="other_date">
-                    <small><img src="images/calendar.svg" alt="Calendar"></small>
-                    Other Date
-                  </h1>
-                </button>
-              </li>
-            </ul>
-            
-          </section>
+              <ul class="nav nav-tabs dark-shimmer" id="myTab" role="tablist">
+                <li class="nav-item legend">Mar</li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="day-tab_0"
+                    data-toggle="tab"
+                    data-target="#day-tab-pane_0"
+                    type="button"
+                    role="tab"
+                    aria-controls="day-tab-pane_0"
+                    aria-selected="true"
+                  >
+                    <h1><small>DAY</small> 1</h1>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="day-tab_1"
+                    data-toggle="tab"
+                    data-target="#day-tab-pane_1"
+                    type="button"
+                    role="tab"
+                    aria-controls="day-tab-pane_1"
+                    aria-selected="false"
+                  >
+                    <h1><small>DAY</small> 2</h1>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="day-tab_2"
+                    data-toggle="tab"
+                    data-target="#day-tab-pane_2"
+                    type="button"
+                    role="tab"
+                    aria-controls="day-tab-pane_2"
+                    aria-selected="false"
+                  >
+                    <h1><small>DAY</small> 3</h1>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="day-tab_3"
+                    data-toggle="tab"
+                    data-target="#day-tab-pane_3"
+                    type="button"
+                    role="tab"
+                    aria-controls="day-tab-pane_3"
+                    aria-selected="false"
+                  >
+                    <h1><small>DAY</small> 4</h1>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="day-tab_4"
+                    data-toggle="tab"
+                    data-target="#day-tab-pane_4"
+                    type="button"
+                    role="tab"
+                    aria-controls="day-tab-pane_4"
+                    aria-selected="false"
+                  >
+                    <h1><small>DAY</small> 5</h1>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link other-date"
+                    type="button"
+                    id="day-tab_5"
+                    data-toggle="tab"
+                    data-target="#day-tab-pane_5"
+                    type="button"
+                    role="tab"
+                    aria-controls="day-tab-pane_5"
+                    aria-selected="false"
+                  >
+                    <h1 class="other_date"  data-toggle="modal"
+                    data-target="#calendarModal">
+                      <small
+                        ><img src="images/calendar.svg" alt="Calendar"
+                      /></small>
+                      Other Date
+                    </h1>
+                  </button>
+                </li>
+              </ul>
+            </section>
 
-          <div class="radioW_section lazyLoad fetched_list fetched_list-dark lazyload-dark">
-            <div class="filter_row border-0 mb-3 p-3">
-              <a class="filter_toggler light-shimmer" href="#price" role="button" aria-expanded="true"
-                aria-controls="price">
-                Select Category</a>
+            <div
+              class="radioW_section lazyLoad fetched_list fetched_list-dark lazyload-dark"
+            >
+              <div class="filter_row border-0 mb-3 p-3">
+                <a
+                  class="filter_toggler light-shimmer"
+                  href="#price"
+                  role="button"
+                  aria-expanded="true"
+                  aria-controls="price"
+                >
+                  Select Category</a
+                >
 
-              <div class="collapse show" id="price">
-                <div class="inner_collaspe_area">
-                  <div class="custom-control custom-radio radioW_cust mb-2 dark-shimmer rounded-shimmer">
-                    <input type="radio" class="custom-control-input carrier_checkbox 10" value="lowtohigh"
-                      id="lowToHigh" name="price" checked="" />
-                    <label class="custom-control-label" for="lowToHigh">
-                      <div class="BottomSecWrap dark-shimmer">
-                        <h6>10 Hours General admission</h6>
-                        <span class="priceS"> PKR 5,280 </span>
-                        <span class="TaxeS" style="font-size: 7px; padding-top: 2px">
-                          (Inclusive of all Taxes)</span>
-                      </div>
-                    </label>
-                    <span class="filtersPrc d-none"></span>
+                <div class="collapse show" id="price">
+                  <div class="inner_collaspe_area">
+                    <div
+                      class="custom-control custom-radio radioW_cust mb-2 dark-shimmer rounded-shimmer"
+                    >
+                      <input
+                        type="radio"
+                        class="custom-control-input carrier_checkbox 10"
+                        value="lowtohigh"
+                        id="lowToHigh"
+                        name="price"
+                        checked=""
+                      />
+                      <label class="custom-control-label" for="lowToHigh">
+                        <div class="BottomSecWrap dark-shimmer">
+                          <h6>10 Hours General admission</h6>
+                          <span class="priceS"> PKR 5,280 </span>
+                          <span
+                            class="TaxeS"
+                            style="font-size: 7px; padding-top: 2px"
+                          >
+                            (Inclusive of all Taxes)</span
+                          >
+                        </div>
+                      </label>
+                      <span class="filtersPrc d-none"></span>
+                    </div>
+
+                    <div
+                      class="custom-control custom-radio radioW_cust light-shimmer rounded-shimmer"
+                    >
+                      <input
+                        type="radio"
+                        class="custom-control-input carrier_checkbox 10"
+                        value="hightolow"
+                        id="hightolow"
+                        name="price"
+                      />
+                      <label class="custom-control-label" for="hightolow">
+                        <h6>5 Hours General Admission</h6>
+                        <div class="BottomSecWrap dark-shimmer">
+                          <span class="priceS"> PKR 5,280 </span>
+                          <span
+                            class="TaxeS"
+                            style="font-size: 7px; padding-top: 2px"
+                          >
+                            (Inclusive of all Taxes)</span
+                          >
+                        </div>
+                      </label>
+                      <span class="filtersPrc d-none"></span>
+                    </div>
                   </div>
-
-                  <div class="custom-control custom-radio radioW_cust light-shimmer rounded-shimmer">
-                    <input type="radio" class="custom-control-input carrier_checkbox 10" value="hightolow"
-                      id="hightolow" name="price" />
-                    <label class="custom-control-label" for="hightolow">
-                      <h6>5 Hours General Admission</h6>
-                      <div class="BottomSecWrap dark-shimmer">
-                        <span class="priceS"> PKR 5,280 </span>
-                        <span class="TaxeS" style="font-size: 7px; padding-top: 2px">
-                          (Inclusive of all Taxes)</span>
-                      </div>
-                    </label>
-                    <span class="filtersPrc d-none"></span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="travler_section lazyLoad fetched_list fetched_list-dark lazyload-dark m-3"
+            >
+              <div class="pass_row p-2 dark-shimmer">
+                <div class="left_area">
+                  <img src="images/adult.svg" alt="" />
+                  <h4>Adult(s) <span>Above 12 years</span></h4>
+                </div>
+                <div class="right_area">
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button
+                        type="button"
+                        class="btn btn-default btn-number minus_btn_adult"
+                        data-type="minus"
+                        data-field="adult"
+                      >
+                        <i class="fa fa-minus"></i>
+                      </button>
+                    </span>
+                    <input
+                      type="text"
+                      class="form-control input-number adult_hidden"
+                      name=""
+                      value="1"
+                      min="1"
+                      max="10"
+                      id="adult_passengers_room_1"
+                      readonly=""
+                    />
+                    <span class="input-group-btn">
+                      <button
+                        type="button"
+                        class="btn btn-default btn-number plus_btn_adult"
+                        data-type="plus"
+                        data-field="adult"
+                      >
+                        <i class="fa fa-plus"></i>
+                      </button>
+                    </span>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="travler_section lazyLoad fetched_list fetched_list-dark lazyload-dark">
-            <div class="pass_row p-2 dark-shimmer">
-              <div class="left_area">
-                <img src="images/adult.svg" alt="" />
-                <h4>Adult(s) <span>Above 12 years</span></h4>
-              </div>
-              <div class="right_area">
-                <div class="input-group">
-                  <span class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-number minus_btn_adult" data-type="minus"
-                      data-field="adult">
-                      <i class="fa fa-minus"></i>
-                    </button>
-                  </span>
-                  <input type="text" class="form-control input-number adult_hidden" name="" value="1" min="1" max="10"
-                    id="adult_passengers_room_1" readonly="" />
-                  <span class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-number plus_btn_adult" data-type="plus"
-                      data-field="adult">
-                      <i class="fa fa-plus"></i>
-                    </button>
-                  </span>
+              <div class="pass_row p-2 light-shimmer">
+                <div class="left_area">
+                  <img src="images/child.svg" alt="" />
+                  <h4>Child <span>Between 2-12 years</span></h4>
                 </div>
-              </div>
-            </div>
-            <div class="pass_row p-2 light-shimmer">
-              <div class="left_area">
-                <img src="images/child.svg" alt="" />
-                <h4>Child <span>Between 2-12 years</span></h4>
-              </div>
 
-              <div class="right_area">
-                <div class="input-group">
-                  <span class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-number minus_btn_children" data-type="minus"
-                      data-field="children">
-                      <i class="fa fa-minus"></i>
-                    </button>
-                  </span>
-                  <input type="text" name="" class="form-control input-number children_hidden" value="0" min="0"
-                    max="10" id="child_passengers_room_1" readonly="" />
-                  <span class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-number plus_btn_children" data-type="plus"
-                      data-field="children">
-                      <i class="fa fa-plus"></i>
-                    </button>
-                  </span>
+                <div class="right_area">
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button
+                        type="button"
+                        class="btn btn-default btn-number minus_btn_children"
+                        data-type="minus"
+                        data-field="children"
+                      >
+                        <i class="fa fa-minus"></i>
+                      </button>
+                    </span>
+                    <input
+                      type="text"
+                      name=""
+                      class="form-control input-number children_hidden"
+                      value="0"
+                      min="0"
+                      max="10"
+                      id="child_passengers_room_1"
+                      readonly=""
+                    />
+                    <span class="input-group-btn">
+                      <button
+                        type="button"
+                        class="btn btn-default btn-number plus_btn_children"
+                        data-type="plus"
+                        data-field="children"
+                      >
+                        <i class="fa fa-plus"></i>
+                      </button>
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="flight_search m-2 dark-shimmer rounded-shimmer">
-              <div class="inpute_holder input_holder_modal">
-                <label class="child_label mb-0"><img src="images/child.svg" alt="" /> Child 1 Age (In
-                  years)</label>
+              <div class="flight_search m-2 dark-shimmer rounded-shimmer">
+                <div class="inpute_holder input_holder_modal">
+                  <label class="child_label mb-0"
+                    ><img src="images/child.svg" alt="" /> Child 1 Age (In
+                    years)</label
+                  >
                   <select class="form-control input-class">
                     <option value="" disabled selected>Select Age</option>
                     <option value="1">1 Year</option>
@@ -272,48 +415,55 @@
                     <option value="9">9 Years</option>
                     <option value="10">10 Years</option>
                   </select>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="last_section lazyLoad fetched_list fetched_list-dark lazyload-dark">
-          <div class="inner_desc_trip dark-shimmer rounded-shimmer">
-            <h5 class="dark-shimmer">Tour Information</h5>
-            <div class="booking-item">
-              <div class="booking-info">
-                <span class="booking-number">1</span>
-                <div class="booking-details">
-                  <h3>Dubai Miracle Garden</h3>
-                  <p>2 Adults | 2 Child</p>
-                  <p>Feb 20, 2025</p>
-                </div>
-              </div>
-              <div class="booking-price">
-                <strong>PKR 101,280</strong>
-              </div>
-            </div>
-            <div class="total-section">
-              <hr />
-              <div class="total-info">
-                <span>Total</span>
-                <div class="total-amount">
-                  <strong class="price">Rs: 335,000</strong>
-                  <p>2 Adults - 2 Child</p>
                 </div>
               </div>
             </div>
+          </div>
+          <div
+            class="last_section lazyLoad fetched_list fetched_list-dark lazyload-dark"
+          >
+            <div class="inner_desc_trip dark-shimmer rounded-shimmer">
+              <h5 class="dark-shimmer">Tour Information</h5>
+              <div class="booking-item">
+                <div class="booking-info">
+                  <span class="booking-number">1</span>
+                  <div class="booking-details">
+                    <h3>Dubai Miracle Garden</h3>
+                    <p>2 Adults | 2 Child</p>
+                    <p>Feb 20, 2025</p>
+                  </div>
+                </div>
+                <div class="booking-price">
+                  <strong>PKR 101,280</strong>
+                </div>
+              </div>
+              <div class="total-section">
+                <hr />
+                <div class="total-info">
+                  <span>Total</span>
+                  <div class="total-amount">
+                    <strong class="price">Rs: 335,000</strong>
+                    <p>2 Adults - 2 Child</p>
+                  </div>
+                </div>
+              </div>
 
-            <div class="fetched_list fetched_list-dark">
-              <div class="light-shimmer">
-                <input id="bookNowBtn" type="submit" class="btn" value="Proceed" />
+              <div class="fetched_list fetched_list-dark">
+                <div class="light-shimmer">
+                  <input
+                    id="bookNowBtn"
+                    type="submit"
+                    class="btn"
+                    value="Proceed"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- end of the fist right side -->
+          </div> -->
+          <!-- end of the fist right side -->
 
-        <!-- start of the availability for everyday trip -->
-        <!-- <div class="right_side pb-3 lazyLoad fetched_list fetched_list-dark lazyload-dark">
+          <!-- start of the availability for everyday trip -->
+          <!-- <div class="right_side pb-3 lazyLoad fetched_list fetched_list-dark lazyload-dark">
           <section class="have_border itinerary">
             <div class="fancy_title p-3 ">
               <h2 class="light-shimmer">Availability</h2>
@@ -351,14 +501,27 @@
                   <h1><small>DAY</small> 5</h1>
                 </button>
               </li>
-              <li class="nav-item" role="presentation">
-                <button class="btn nav-link" type="button" data-toggle="modal" data-target="#calendarModal">
-                  <h1 class="other_date">
-                    <small><img src="images/calendar.svg" alt="Calendar"></small>
-                    Other Date
-                  </h1>
-                </button>
-              </li>
+             <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link other-date"
+                    type="button"
+                    id="day-tab_5"
+                    data-toggle="tab"
+                    data-target="#day-tab-pane_5"
+                    type="button"
+                    role="tab"
+                    aria-controls="day-tab-pane_5"
+                    aria-selected="false"
+                  >
+                    <h1 class="other_date"  data-toggle="modal"
+                    data-target="#calendarModal">
+                      <small
+                        ><img src="images/calendar.svg" alt="Calendar"
+                      /></small>
+                      Other Date
+                    </h1>
+                  </button>
+                </li>
             </ul>
 
           </section>
@@ -670,10 +833,10 @@
             </div>
           </div>
         </div> -->
-        <!-- end of the availability for everyday trip -->
+          <!-- end of the availability for everyday trip -->
 
-        <!-- start of the fixed departure -->
-        <!-- <div class="right_side p-3 lazyLoad fetched_list fetched_list-dark lazyload-dark">
+          <!-- start of the fixed departure -->
+          <div class="right_side p-3 lazyLoad fetched_list fetched_list-dark lazyload-dark">
               <section class="have_border itinerary">
                 <div class="fancy_title">
                   <h2 class="light-shimmer">Availability</h2>
@@ -869,7 +1032,7 @@
                   </div>
                   <div class="flight_search">
                     <div class="inpute_holder input_holder_modal">
-                      <label class="child_label"
+                      <label class="child_label mb-0"
                         ><img src="images/child.svg" alt="" /> Child 1 Age (In
                         years)</label
                       >
@@ -1021,76 +1184,79 @@
                   </div>
                 </div>
               </div>
-            </div> -->
-        <!-- end of the fixed departure -->
+            </div>
+          <!-- end of the fixed departure -->
+        </div>
+      </div>
+      <!-- end of side div -->
+    </div>
+
+    <!-- Calendar Modal -->
+    <div
+      class="modal fade"
+      id="calendarModal"
+      tabindex="-1"
+      aria-labelledby="calendarModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal_cntnt">
+          <div class="modal-body p-0">
+            <div id="datepicker"></div>
+          </div>
+          <div class="modal-footer border-0 d-flex justify-content-center">
+            <button type="button" class="btn calender_btn" id="applyDate">
+              Apply
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- end of side div -->
+    <!--END OF MASK-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
-  </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 
-  <!-- Calendar Modal -->
-  <div
-  class="modal fade"
-  id="calendarModal"
-  tabindex="-1"
-  aria-labelledby="calendarModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content modal_cntnt">
-      <div class="modal-body p-0">
-        <div id="datepicker"></div>
-      </div>
-      <div class="modal-footer border-0 d-flex justify-content-center">
-        <button type="button" class="btn calender_btn" id="applyDate">
-          Apply
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-  <!--END OF MASK-->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    <!-- lazyloader js -->
+    <script>
+      setTimeout(function () {
+        document.querySelectorAll(".fetched_list").forEach(function (element) {
+          element.classList.remove("lazyLoad");
+        });
+        document
+          .querySelectorAll(".fetched_list-dark")
+          .forEach(function (element) {
+            element.classList.remove("lazyload-dark");
+          });
+      }, 2000);
     </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-
-  <!-- lazyloader js -->
-  <script>
-    setTimeout(function () {
-      document.querySelectorAll('.fetched_list').forEach(function (element) {
-        element.classList.remove('lazyLoad');
+    <!-- ui date picker js -->
+    <script>
+      $(function () {
+        $("#datepicker").datepicker({
+          beforeShowDay: function (date) {
+            let day = date.getDay(); // 0 = Sunday, 6 = Saturday
+            if (day === 0 || day === 6) {
+              return [true, "weekend-date", "Weekend"]; // Adds "weekend-date" class
+            }
+            return [true, "", ""];
+          },
+        });
       });
-      document.querySelectorAll('.fetched_list-dark').forEach(function (element) {
-        element.classList.remove('lazyload-dark');
-      });
-    }, 2000);
+    </script>
+    <!-- Replace YOUR_KEY with your actual Google Maps API key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=myMap"></script>
 
-  </script>
-
-  <!-- ui date picker js -->
-   <script>
-$(function () {
-    $("#datepicker").datepicker({
-      beforeShowDay: function (date) {
-        let day = date.getDay(); // 0 = Sunday, 6 = Saturday
-        if (day === 0 || day === 6) {
-          return [true, "weekend-date", "Weekend"]; // Adds "weekend-date" class
-        }
-        return [true, "", ""];
-      }
-    });
-  });
-   </script>
-  <!-- Replace YOUR_KEY with your actual Google Maps API key -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=myMap"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  </body>
 </html>

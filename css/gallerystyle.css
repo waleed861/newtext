@@ -160,6 +160,9 @@ h5 {
   box-shadow: none;
   outline: none;
 }
+.itinerary .nav .nav-item .other-date.active h1 small img {
+  filter: invert(0) brightness(100);
+}
 
 .other_date {
   font-size: 9px !important;
@@ -273,6 +276,10 @@ h5 {
   display: block;
   font-size: 12px;
   color: #383535;
+}
+
+.input-class {
+  margin-top: -3px;
 }
 
 .input-group {

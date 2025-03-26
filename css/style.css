@@ -113,7 +113,7 @@
   content: "";
   width: 7px;
   height: 5px;
-  background-color: #fff;
+  background-color: #b31f24;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -359,10 +359,6 @@ ul li::marker {
 .itinerary .nav .nav-item {
   width: 100%;
 }
-.itinerary .nav .nav-item .nav-link.active {
-  background-color: #b31f24;
-  color: #fff;
-}
 .itinerary .nav .nav-item .nav-link {
   background-color: #fff;
   padding: 10px 15px;
@@ -379,6 +375,13 @@ ul li::marker {
 }
 .itinerary .nav .nav-item .nav-link h1 small {
   font-size: 13px;
+}
+.itinerary .nav .nav-item .nav-link.active {
+  background-color: #b31f24;
+  color: #fff;
+}
+.itinerary .nav .nav-item .other-date.active h1 small img {
+  filter: invert(0) brightness(100);
 }
 
 .other_date {
@@ -609,10 +612,16 @@ input[type=radio] {
 .flight_search .inpute_holder .form-control {
   border: 0;
   padding: 0;
-  width: 85%;
-  font-size: 14px;
+  width: 100%;
+  font-size: 12px;
   outline: none;
   box-shadow: none;
+  color: #495057;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='black'><path d='M5 7l5 5 5-5H5z'/></svg>");
+  background-position: right 0 center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  cursor: pointer;
 }
 .flight_search .inpute_holder label img {
   margin-right: 5px;
@@ -1024,35 +1033,67 @@ input[type=radio] {
 }
 .modal-body #datepicker .ui-datepicker .ui-datepicker-prev {
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 30%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 1.8em;
+  height: 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .modal-body #datepicker .ui-datepicker .ui-datepicker-prev::after {
-  position: absolute;
   content: "\f0d9";
   font-family: "Font Awesome 5 Free";
-  top: 0px;
-  left: 12px;
+  font-weight: 900;
+  font-size: 1.2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: content 0.3s ease-in-out;
+}
+.modal-body #datepicker .ui-datepicker .ui-datepicker-prev:hover::after {
+  content: "\f0d9";
 }
 .modal-body #datepicker .ui-datepicker .ui-datepicker-prev span {
   display: none;
 }
+.modal-body #datepicker .ui-datepicker .ui-datepicker-prev:hover {
+  background: none;
+  border: none;
+}
 .modal-body #datepicker .ui-datepicker .ui-datepicker-next {
-  right: 2px;
   position: absolute;
-  top: 2px;
+  top: 30%;
+  right: 10px;
+  transform: translateY(-50%);
   width: 1.8em;
   height: 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .modal-body #datepicker .ui-datepicker .ui-datepicker-next::after {
-  position: absolute;
   content: "\f0da";
   font-family: "Font Awesome 5 Free";
-  top: 0px;
-  right: 12px;
+  font-weight: 900;
+  font-size: 1.2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: content 0.3s ease-in-out;
+}
+.modal-body #datepicker .ui-datepicker .ui-datepicker-next:hover::after {
+  content: "\f0da";
 }
 .modal-body #datepicker .ui-datepicker .ui-datepicker-next span {
   display: none;
+}
+.modal-body #datepicker .ui-datepicker .ui-datepicker-next:hover {
+  background: none;
+  border: none;
 }
 
 .ui-datepicker table {
@@ -1168,16 +1209,14 @@ fieldset {
   background-position: 95% 57%;
   background-size: 15px;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
-.select_nation select {
-  appearance: none; /* Standard for modern browsers */
-  -webkit-appearance: none; /* Safari & Chrome */
-  -moz-appearance: none; /* Firefox */
-  background-image: none !important; /* Removes background icon */
-  padding-right: 10px; /* Adjust padding to prevent empty space */
+.services {
+  background-color: #fff !important;
+  border-bottom: 1px solid #fbfbfb;
+  padding: 5px;
 }
 
 .iti {
